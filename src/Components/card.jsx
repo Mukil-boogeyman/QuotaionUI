@@ -17,9 +17,11 @@ export default function MediaCard() {
         image={clogo}
         title="green iguana"
       >
-        <div style={{height:"20px"}}>
-        <img src={binicon} alt="BinIcon" style={{backgroundColor:"white",height:"30px",borderRadius:"100%",padding:"2px"}} />
-          </div></CardMedia>
+        <div style={{height:"27px", width:"27px", backgroundColor:"white",position:"absolute",display:"flex",alignItems:"center",justifyContent:"center",borderRadius:"100%",marginLeft:"164px",marginTop:"7px"}}>
+        <img src={binicon} alt="BinIcon" style={{backgroundColor:"white",height:"20px",padding:"2px",borderRadius:"10%"}} />
+        </div>
+          
+          </CardMedia>
       <CardContent>
         <div style={{display:"flex",flexDirection:"row",justifyContent:"space-between",fontSize:"14px"}}>
             <div>
@@ -37,6 +39,7 @@ export default function MediaCard() {
             <FiberManualRecordIcon style={{height:"10px",color:"#CED3DD"}}/>
 
             </div>
+           
             <div>
             <p>2000 Sq.Ft</p>
             </div>

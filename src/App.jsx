@@ -1,21 +1,14 @@
-import react,{ useState } from 'react'
+import { useState } from 'react'
 
-import PrimarySearchAppBar from './Components/TopnavBar'
-import MiniDrawer from './Components/SideBar'
+import './App.css'
+import Home from './pages/Home'
+
 function App() {
 
   return (
-    <>
-    {/* <PrimarySearchAppBar/> */}
-    <div>
-
-   
-      
-      <div>
-      <MiniDrawer/>
-      </div>
-      </div>
-    </>
+    <div className='main'>
+     <Home/>
+    </div>
   )
 }
 
