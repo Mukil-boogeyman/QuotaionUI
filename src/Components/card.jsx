@@ -25,7 +25,7 @@ export default function MediaCard() {
       <CardContent>
         <div style={{display:"flex",flexDirection:"row",justifyContent:"space-between",fontSize:"14px"}}>
             <div>
-                <p>Jumeirah Estate</p>
+                <p>Jumeirah Estate</p>  
             </div>
             <div>
                 <p style={{color:"#FF9340"}}>$ 900.00</p>
@@ -83,7 +83,7 @@ export default function MediaCard() {
       </CardContent>
       <CardActions style={{display:"flex",alignItems:"center",justifyContent:"center",marginTop:"-20px"}}>
         <AddIcon style={{ color: '#5078E1',marginRight:"-10px" }}/>
-        <Button size="small" >Customise</Button>
+        <Button size="small" ></Button>
       </CardActions>
     </Card>
   );

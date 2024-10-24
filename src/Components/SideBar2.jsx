@@ -28,6 +28,7 @@ import MoreIcon from '@mui/icons-material/MoreVert';
 import InputBase from '@mui/material/InputBase';
 import logo1 from "../assets/logo1.png";
 import MediaCard from './card';
+import SearchAppBar from './TopnavBar';
 
 
 const drawerWidth = 240;
@@ -332,9 +333,12 @@ export default function MiniDrawer() {
           ))}
         </List>        
       </Drawer>
-      <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-        <DrawerHeader />
+      <Box component="main" sx={{ flexGrow: 1, p: 3,marginTop:"40px" }}>
+     
+      <SearchAppBar/>
+
         <MediaCard/>
+
       </Box>
     </Box>
   );

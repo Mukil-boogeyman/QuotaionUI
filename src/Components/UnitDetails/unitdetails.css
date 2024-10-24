@@ -28,7 +28,7 @@
     border: 1px solid #E4E8EE;
     border-radius: 6px;
     height: 250px;
-    /* width: 45%; */
+    
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -62,7 +62,7 @@
 }
 .unit-details{
     width: 90%;
-    height: 45%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,11 +93,12 @@
     font-size: 15px;
 }
 .estate-customise{
-    width: 60%;
+    width: 40%;
     color: #5078E1;
     font-size: 14px;
     display: flex;
     justify-content: space-evenly;
     font-weight: 600;
     align-items: center;
+    margin-bottom: "-50px";
 }

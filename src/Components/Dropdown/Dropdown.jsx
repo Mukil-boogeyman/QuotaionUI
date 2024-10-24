@@ -1,48 +1,34 @@
-import React, { useState } from 'react';
-import { MenuItem, FormControl, Select, InputLabel } from '@mui/material';
+import * as React from 'react';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 
-function DropdownComponent() {
-  const [value, setValue] = useState('Casagrand');
+export default function SelectLabels() {
+  const [age, setAge] = React.useState('');
 
   const handleChange = (event) => {
-    setValue(event.target.value);
+    setAge(event.target.value);
   };
 
   return (
-    <FormControl fullWidth>
-      
-      <Select
-        labelId="demo-simple-select-label"
-        id="demo-simple-select"
-        value={value}
-        defaultValue='Casagrand'
-        
-        onChange={handleChange}
-        sx={{
-          '& .MuiOutlinedInput-root': {
-            borderRadius: '10px',  // Rounded corners
-            backgroundColor: 'white', // White background
-            minHeight: '32px',
-            minWidth:'166px' // Reduced height of the dropdown
-          },
-          '& .MuiSvgIcon-root': {
-            color: '#3b5998', // Custom color for the arrow icon
-          },
-          '& .MuiSelect-select': {
-            padding: '5px 10px',
-            minHeight: '25px',
-            minWidth:'166px',
-            backgroundColor:'#F5F7FA',
-            border:'1px solid #E4E8EE' // Reduced padding inside the select box
-          }
-        }}
-      >
-        <MenuItem value="Casagrand" sx={{ minHeight: '30px' }}>Casagrand</MenuItem>
-        <MenuItem value="Option 1" sx={{ minHeight: '30px' }}>Option 2</MenuItem>
-        <MenuItem value="option 2" sx={{ minHeight: '30px' }}>Option 3</MenuItem>
-      </Select>
-    </FormControl>
+    <div>
+ 
+      <FormControl sx={{ m: 1, minWidth: 130,backgroundColor:"#F5F7FA",borderRadius:"5px",height:"35px",display:"flex",justifyContent:"center",border:"2px white solid" }}>
+        <Select
+          value={age}
+          onChange={handleChange}
+          displayEmpty
+          sx={{height:"35px",border:"2px solid white"}}
+          inputProps={{ 'aria-label': 'Without label' }}
+        >
+          <MenuItem value="">
+            Casagrand
+          </MenuItem>
+          <MenuItem value={10}>Ten</MenuItem>
+          <MenuItem value={20}>Twenty</MenuItem>
+          <MenuItem value={30}>Thirty</MenuItem>
+        </Select>
+      </FormControl>
+    </div>
   );
 }
-
-export default DropdownComponent;

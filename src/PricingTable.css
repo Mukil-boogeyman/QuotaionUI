@@ -1,0 +1,89 @@
+.pricing-table {
+    padding: 20px;
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    height: 50%;
+  }
+  
+  .title {
+    color:  #ef5350;
+    font-size: 16px;
+    margin-bottom: 16px;
+    width: 95%;
+    background-color: #fbe5e5;
+
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+padding-left: 10px;
+padding-right: 10px;
+border-radius: 5px;
+  }
+  
+  .row {
+    margin-bottom: 16px;
+  }
+  
+  .radio-group {
+    display:flex;
+    gap:8px;
+
+
+}
+.rdbut{
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0%;
+    border-radius: 5px;
+
+}
+  
+  .select {
+    width: 100%;
+  }
+  
+  .input {
+    width: 100%;
+  }
+  
+  .slider-row {
+    margin-bottom: 24px;
+  }
+  
+  .slider-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .slider-values {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    color: #aaa;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+  
+  .back-button {
+    background-color: #f0f0f0;
+    border-color: #d9d9d9;
+  }
+  
+  .primary-button {
+    background-color: #1890ff;
+    border-color: #1890ff;
+  }
+  

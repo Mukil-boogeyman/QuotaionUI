@@ -1,6 +1,6 @@
 import { Box, Divider } from "@mui/material";
 import React from "react";
-import Profile from "../../assets/NoPath - Copy (7)@2x.png";
+import Profile from "../../assets/male.jpg";
 
 export default function Leaddetails() {
   return (
@@ -12,7 +12,7 @@ export default function Leaddetails() {
         flexDirection: 'column',
         marginLeft: '24px',
         marginBottom: '30px',
-        marginTop: '20px'
+       paddingTop:"20px"
       }}
     >
       <Box
@@ -30,7 +30,7 @@ export default function Leaddetails() {
 
       <Box
         sx={{
-          height: '15%',
+          height: '60px',
           width: '100%',
           border: '1px solid #E4E8EE',
           borderRadius: '4px',
@@ -44,7 +44,7 @@ export default function Leaddetails() {
           <img
             src={Profile}
             alt="Profile"
-            style={{ height: '100px', width: '100px',marginLeft:"-15px" }}
+            style={{ height: "40px", width: '40px',marginLeft:"15px",marginRight:"15px",borderRadius:"5px" }}
           />
         </Box>
 
@@ -54,7 +54,7 @@ export default function Leaddetails() {
             height: '70%',
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'space-evenly'
+            gap:"2px"
           }}
         >
           <Box
@@ -74,7 +74,8 @@ export default function Leaddetails() {
                 backgroundColor: '#5078E11E',
                 borderRadius: '4px',
                 padding: '1.5% 3%',
-                height:"20px",
+                height:"19px",
+                marginTop:"-1px",
                 display:"flex",
                 justifyContent:"center",
                 alignItems:"center"
@@ -87,15 +88,17 @@ export default function Leaddetails() {
           <Box
             sx={{
               width: '100%',
-              justifyContent: 'space-between',
+              justifyContent: 'start',
+              gap:"10px",
               display: 'flex',
               fontSize: '13px',
               color: '#5078E1',
               alignItems: 'center',
-              marginLeft:"-12px"
+           
+              marginTop:"-10px"
             }}
           >
-            <Box><p style={{color:"#4E5A6B"}}>+91 9090808012</p></Box>
+            <Box><p style={{color:"#4E5A6B",fontSize:"12px"}}>+91 9090808012</p></Box>
             <Box
               sx={{
                 height: '5px',
@@ -104,29 +107,30 @@ export default function Leaddetails() {
                 borderRadius: '50%'
               }}
             ></Box>
-            <Box><p style={{color:"#4E5A6B"}}>Tomcruise2515@mail.com</p></Box>
+            <Box><p style={{color:"#4E5A6B",fontSize:"12px"}}>Tomcruise2515@mail.com</p></Box>
           </Box>
         </Box>
       </Box>
 
       <Divider
         sx={{
-          height: '6%',
+          height: '3%',
           width: '100%'
         }}
       />
 
       <Box
         sx={{
-          padding: '6% 0%',
+          padding: '3% 0%',
           height: '55%'
         }}
       >
         <Box
           sx={{
-            color: '#5078E1',
+            color: '#4E5A6B',
             fontSize: '14px',
             fontWeight: '600'
+            
           }}
         >
           Quotation Details
@@ -134,24 +138,24 @@ export default function Leaddetails() {
 
         <Box
           sx={{
-            paddingTop: '6%',
+            paddingTop: '3%',
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))',
-            gap: '20px'
+            gap: '20px',
           }}
         >
           {[
             { title: 'LEASE START DATE', date: '30 Jan 22' },
             { title: 'LEASE END DATE', date: '30 Jan 23' },
             { title: 'RENT START DATE', date: '30 Jan 23' },
-            { title: 'GRACE PERIOD', date: '90 Days', }
+            { title: 'GRACE PERIOD', date: '90 Days',beg:'(Beginning)' }
           ].map((item, index) => (
             <Box key={index} sx={{ display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
-              <Box sx={{ fontSize: '10px', color: '#98A0AC', fontWeight: '600' }}>
+              <Box sx={{ fontSize: '8px', color: '#98A0AC', fontWeight: '600' }}>
                 {item.title}
               </Box>
-              <Box sx={{ fontSize: '12px', color: '#091B29', fontWeight: '600' }}>
-                {item.date}
+              <Box sx={{ fontSize: '12px', color: '#091B29', fontWeight: '600', display:"flex",flexDirection:"row" }}>
+                {item.date}  <div style={{color:"#98A0AC"}}>{item.beg}</div>
               </Box>
            
             </Box>
